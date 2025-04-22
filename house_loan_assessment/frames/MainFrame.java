@@ -46,8 +46,8 @@ public class MainFrame
     String intRateOptions[] = {"Select interest rate", "6.25% (Fixed for 1–2 years)", "6.75% (Fixed for 3 years)", "7.25% (Fixed for 4–5 years)"};
     
     // Combo boxes
-    JComboBox tenureBox = new JComboBox(tenureOptions);
-    JComboBox intRateBox = new JComboBox(intRateOptions);
+    JComboBox<String> tenureBox = new JComboBox<>(tenureOptions);
+    JComboBox<String> intRateBox = new JComboBox<>(intRateOptions);
     
     public MainFrame()
     {

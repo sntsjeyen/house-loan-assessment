@@ -185,7 +185,7 @@ public class LoanValueFrame extends MainFrame
         try
         {
             int tenure, intRateChoice = intRateBox.getSelectedIndex();
-            double amort = Double.NaN, income = Double.NaN, propertyVal = Double.NaN, intRate = 0;
+            double amort = Double.NaN, income = Double.NaN, intRate = 0;    // propertyVal = Double.NaN
                 
             tenure = Integer.parseInt((String)tenureBox.getSelectedItem());
             
@@ -254,6 +254,7 @@ public class LoanValueFrame extends MainFrame
         }
     }
     
+    /*
     private void resetButtonActionPerformed2(ActionEvent e)
     {
         if (e.getSource() == resetButton)
@@ -261,6 +262,7 @@ public class LoanValueFrame extends MainFrame
             propertyValTextField.setText("");
         }
     }
+    */
         
     public void computeLoan(double amort, double income, int tenure, double intRate)
     {

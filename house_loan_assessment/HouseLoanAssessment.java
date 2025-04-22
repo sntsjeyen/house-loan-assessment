@@ -27,7 +27,7 @@ public class HouseLoanAssessment extends JFrame
     
     // Combo box
     String loanValueOptions[] = {"Amortization", "Income", "Property Value"};
-    JComboBox loanValueBox = new JComboBox(loanValueOptions);
+    JComboBox<String> loanValueBox = new JComboBox<>(loanValueOptions);
     
     public HouseLoanAssessment()
     {
@@ -196,6 +196,6 @@ public class HouseLoanAssessment extends JFrame
     
     public static void main(String[] args)
     {
-        new HouseLoanAssessment().show();    
+        new HouseLoanAssessment().setVisible(true);    
     }
 }
